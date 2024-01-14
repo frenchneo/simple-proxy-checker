@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "lib": ["es5", "es6", "es2019", "es2015", "dom"],
+    "lib": ["es5", "es6", "es2019", "es2015", "dom", "es2018"],
     "target": "es5",
     "outDir": "./dist",
     "esModuleInterop": true,
