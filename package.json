@@ -1,0 +1,23 @@
+{
+  "name": "simple-proxy-checker",
+  "version": "1.0.0",
+  "author": "frenchneo",
+  "main": "dist/main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/frenchneo/simple-proxy-checker.git"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "rimraf dist && tsc --build",
+    "dev": "tsc-watch -p tsconfig.json --onSuccess \"nodemon ./dist/main.js\"",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "eslint src/**/*.ts",
+    "start": "node ./dist/main.js"
+  },
+  "dependencies": {
+    "nodemon": "^3.0.2",
+    "tsc-watch": "^6.0.4",
+    "typescript": "^5.3.3"
+  }
+}
